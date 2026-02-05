@@ -22,6 +22,16 @@ This phase covers the installation and initial configuration of Splunk Enterpris
 - Splunk Web GUI is accessible from browser
 - Splunk system status shows all services running
 
+
+## Windows Forwarders and Sysmon
+
+- Splunk Universal Forwarder installed on Windows 10 (target-pc) and Windows Server 2022 (AD-01)
+- Sysmon installed on both hosts to capture detailed events
+- Logs successfully forwarded to Splunk (see screenshot below)
+
+![Windows Logs](../../screenshots/setup/splunk/03-forwarders-windows-logs.png)
+
 ## Notes
-- Windows log forwarding will be configured in later phases
-- Screenshots of the GUI will be added after installation
+- Splunk is actively receiving logs from Windows endpoints
+- Additional detections and dashboards will be created in later phases
+
